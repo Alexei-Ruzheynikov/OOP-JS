@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООП на классах</title>
+</head>
+
+<body>
+    <!-- <p>text</p> -->
+
+<!-- <div>text</div> -->
+
+
+
+<!-- <input> -->
+
+
+
+
+
+<!-- <div>text</div>
+<div>text</div>
+<div>text</div> -->
+
+
+
+
+
+<div>
+	<p>text</p>
+	<p>text</p>
+	<p>text</p>
+</div>
+
+<script>
+
+
+
+
+
+
+let elem = document.querySelector('div');
+let elems = elem.children;
+
+console.dir(elems);
+
+
+
+
+
+
+
+
+
+// let elems = document.querySelectorAll('div');
+// console.dir(elems);
+
+
+
+
+
+
+
+
+
+// let elem = document.querySelector('input');
+// console.dir(elem);
+
+
+
+
+// let elem = document.querySelector('div');
+// console.dir(elem);
+
+
+
+// let elem = document.querySelector('p');
+// console.log(elem);
+// console.dir(elem);
+// console.log(elem instanceof HTMLParagraphElement); // true
+
+
+
+
+
+
+
+
+
+
+
+// let obj = new Object;
+
+// console.log(obj);
+// console.dir(obj);
+
+// console.log(obj instanceof Object);
+
+
+
+
+
+
+
+// let obj = {a: 1, b: 2, c: 3};
+
+// console.log(obj);
+// console.dir(obj);
+
+// console.log(obj instanceof Object);
+
+
+
+
+
+
+
+
+// let arr = new Array(1, 2, 3);
+
+// console.log(arr);
+// console.dir(arr);
+
+// console.log(arr instanceof Array);
+
+
+
+
+
+
+
+
+// let arr = [1, 2, 3];
+
+// console.log(arr);
+// console.dir(arr);
+
+// console.log(arr instanceof Array);
+
+
+
+
+
+
+
+
+
+// let reg = new RegExp;
+
+// console.log(reg);
+// console.dir(reg);
+
+// console.log(reg instanceof RegExp);
+
+
+
+
+
+
+
+
+// let date = new Date;
+// console.log(date);
+// console.dir(date);
+
+
+
+
+
+
+
+
+
+
+
+// class Employee {
+//     #employee;
+//     #salare;
+//     constructor(employee, salare){
+//         this.#employee = employee;
+//         this.#salare = salare;
+//     }
+//     getEmployee(){
+//         return this.#employee;
+//     }
+//     getSalare(){
+//         return this.#salare;
+//     }
+// }
+// class EmployeesCollection {
+//     #employees;
+//     #salares;
+//     constructor() {
+//         this.#employees = [];
+//         this.#salares = [];
+        
+//     }
+//     add(employee, salare){
+//         this.#employees.push(employee);
+//         this.#salares.push(salare);
+//     }
+    
+//     show(){
+//         for(let employee of this.#employees){
+//             console.log(employee.getEmployee());
+//             console.log(employee.getSalare());
+//         }
+
+//         // for(let salare of this.#salares){
+//         //     console.log(salare.getSalare());
+//         // }
+//     }
+// }
+
+// let ec = new EmployeesCollection;
+
+// ec.add(new Employee('john', 1000));
+// ec.add(new Employee('eric', 3000));
+// ec.add(new Employee('kyle', 4000));
+
+// ec.show();
+
+
+
+
+
+
+
+
+
+
+// class User {
+//     #name;
+//     constructor(name){
+//         this.#name = name;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+// }
+// class UsersCollection {
+//     #users;
+//     constructor() {
+//         this.#users = [];
+//     }
+//     add(user) {
+//         this.#users.push(user);
+//     }
+//     show(){
+//         for(let user of this.#users){
+//             console.log(user.getName());
+//         }
+//     }
+// }
+
+
+// let uc = new UsersCollection;
+
+// uc.add(new User('john'));
+// uc.add(new User('eric'));
+// uc.add(new User('kyle'));
+
+// uc.show();
+
+
+
+
+
+// class Employee {
+//     #name;
+//     #salares;
+//     constructor(name,salares){
+//         this.#name = name;
+//         this.#salares = salares;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+//     getSalares(){
+//         return this.#salares;
+//     }
+// }
+// let employees = [
+//     new Employee('alex', 10000),
+//     new Employee('ivan', 30000),
+//     new Employee('lisa', 50000),
+// ];
+
+// for (let employee of employees){
+//     console.log(employee.getName() + ' ' + employee.getSalares());
+// }
+
+
+// class User {
+//     #name;
+//     constructor(name) {
+//         this.#name = name;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+// }
+// let users = [
+//     new User('john'),
+//     new User('eric'),
+//     new User('kyle'),
+// ];
+// for(let user of users){
+//     console.log(user.getName());
+// }
+
+
+
+
+
+// class Position{
+//     constructor(position){
+//         this.position = position;
+//     }
+// }
+
+// class Departament{
+//     constructor(departament){
+//         this.departament = departament;
+//     }
+// }
+
+// class Employee {
+// 	constructor(name, position, department) {
+// 		this.name = name;
+// 		this.position = position;
+// 		this.departament = departament;
+// 	}
+// }
+// let position = new Position('Junior');
+// let departament = new Departament('Yandex');
+// let employee = new Employee('Alex', position, departament);
+
+// console.log(employee.name);
+// console.log(employee.position.position);
+// console.log(employee.departament.departament);
+
+
+
+
+
+// class Validator{
+//     getIsStrCorrect(str){
+//         if(typeof str == 'string'){
+//             console.log('Действитеьно строка');
+//         } else {
+//             console.log('Не строка');
+//         }
+//     }
+//     isEmail(email){
+//         if(typeof email == 'string'){
+//             console.log('Действительная почта');
+//         } else {
+//             console.log('Не действительная почта');
+//         }
+//     }
+//     isDomain(domain){
+//         if(typeof email == 'string'){
+//             console.log('Действительный домен');
+//         } else {
+//             console.log('Не действительный домен');
+//         }
+//     }
+//     isNumber(num){
+//         if( !isNaN(Number(num))){
+//             console.log('Содержит только числа');
+//         } else {
+//             console.log('Не только числа');
+//         }
+//     }
+// }
+// let validator = new Validator;
+// let resStr = validator.getIsStrCorrect('line'); 
+// let resMail = validator.isEmail('почта'); 
+// let resDomain = validator.isDomain('домены'); 
+// let resNum = validator.isNumber('4d'); 
+
+
+
+
+
+// class ArrHelper {
+//     getSum(arr){
+//         let res = 0;
+//         for(let num of arr){
+//             res += num;
+//         }
+//         return res;
+//     }
+//     getAvg(arr){
+//         if(arr.length > 0){
+//             let sum = this.getSum(arr);
+//             return sum / arr.length;
+//         } else {
+//             return 0;
+//         }
+//     }
+// }
+
+// let arrHelper = new ArrHelper;
+
+// let sum1 = arrHelper.getSum([1,2,3]);
+// console.log(sum1);
+
+// let sum2 = arrHelper.getSum([3,4,5]);
+// console.log(sum2);
+
+
+
+
+
+// class Student {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let users = [
+// 	new Student('user1'),
+// 	new Employee('user2'),
+// 	new Student('user3'),
+// 	new Employee('user4'),
+// 	new Student('user5'),
+// 	new Employee('user6'),
+// 	new Student('user7'),
+// ];
+
+// for(let user of users){
+//     if(user instanceof Employee){
+//         console.log(user.name);
+//     }
+// }
+
+
+
+// class Student {
+	
+// }
+// class Employee {
+	
+// }
+
+// let employee = new Employee;
+// console.log(employee instanceof Employee);
+// console.log(employee instanceof Student);
+
+
+
+
+
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let emp1 = new Employee('john');
+// let emp2 = emp1;
+// emp2.name = 'eric';
+
+// console.log(emp1 === emp2);
+
+
+
+
+
+
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let emp1 = new Employee('john');
+// let emp2 = new Employee('eric');
+
+// console.log(emp1 !== emp2);
+
+
+
+
+
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let emp1 = new Employee('john');
+// let emp2 = emp1;
+
+// console.log(emp1 === emp2);
+
+
+
+
+
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let emp1 = new Employee('john');
+// let emp2 = new Employee('eric');
+
+// console.log(emp1 !== emp1);
+
+
+
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let emp1 = new Employee('john');
+// let emp2 = new Employee('john');
+
+// console.log(emp1 === emp2);
+
+
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let emp1 = new Employee('john');
+// let emp2 = new Employee('eric');
+
+// console.log(emp1 === emp1);
+
+
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let emp1 = new Employee('john');
+// let emp2 = new Employee('eric');
+
+// console.log(emp1 === emp2);
+
+
+
+// class User {
+//     constructor(name){
+//         this.name = name;
+//     }
+// }
+// let user1 = new User('1');
+// let user2 = new User('2');
+
+// console.log(user1 === user2);
+
+
+
+
+// class Employee{
+//     #name;
+//     #age;
+//     #salary;
+//     setName(name){
+//         this.#name = name;
+//         return this;
+//     }
+//     setAge(age){
+//         if(age >=0 && age <= 120){
+//             this.#age = age; 
+//         } else {
+//             throw new Error ('Error!!!');
+//         }
+//         return this;
+       
+//     }
+//     setSalary(salary){
+//         this.#salary = salary;
+//         return this;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+//     getAge(){
+//         return this.#age;
+//     }
+//     getSalary(){
+//         return this.#salary + '$';
+//     }
+// }
+// let employee = new Employee;
+// // employee.setName('Alex');
+// // employee.setAge(18);
+// // employee.setSalary(50000);
+// employee.setName('Alex').setAge(18).setSalary(50000);
+
+// console.log(employee.getName());
+// console.log(employee.getAge());
+// console.log(employee.getSalary());
+
+
+
+
+
+
+
+
+// class User {
+//     #name;
+//     #surn;
+//     setName(name){
+//         this.#name = name;
+//         return this;
+//     }
+//     setSurn(surn){
+//         this.#surn = surn;
+//         return this;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+//     getSurn(){
+//         return this.#surn;
+//     }
+// }
+// let user = new User;
+// user.setName('john').setSurn('smit');
+// console.log(user.getName());
+// console.log(user.getSurn());
+
+
+
+
+
+
+// class Employee{
+//     #name;
+//     #age;
+//     #salary;
+//     setName(name){
+//         this.#name = name;
+//     }
+//     setAge(age){
+//         if(age >=0 && age <= 120){
+//             this.#age = age; 
+//         } else {
+//             throw new Error ('Error!!!');
+//         }
+       
+//     }
+//     setSalary(salary){
+//         this.#salary = salary;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+//     getAge(){
+//         return this.#age;
+//     }
+//     getSalary(){
+//         return this.#salary + '$';
+//     }
+// }
+// let employee = new Employee;
+// employee.setName('Alex');
+// employee.setAge(18);
+// employee.setSalary(50000);
+// console.log(employee.getName());
+// console.log(employee.getAge());
+// console.log(employee.getSalary());
+
+
+
+
+
+
+
+// class Employee{
+//     #name;
+//     #age;
+//     setName(name){
+//         this.#name = name;
+//     }
+//     setAge(age){
+//         this.#age = age;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+//     getAge(){
+//         return this.#age;
+//     }
+// }
+// let employee = new Employee;
+// employee.setName('Alex');
+// employee.setAge(18);
+// console.log(employee.getName());
+// console.log(employee.getAge());
+
+
+
+
+// class Employee {
+//     #name;
+//     #salary;
+//     #age;
+//     constructor(name, salary, age) {
+//         this.#name = name;
+//         this.#salary = salary;
+//         this.#age = age;
+//     }
+//     getName(){
+//         return this.#name;
+//     }
+//     getSalary(){
+//         return this.#salary;
+//     }
+//     getAge(){
+//         return this.#age;
+//     }
+// }
+// let employee = new Employee('alex','12000', 25);
+// console.log(employee.getName());
+// console.log(employee.getSalary());
+// console.log(employee.getAge());
+
+
+
+
+
+// class Employee {
+// 	constructor(name, salary) {
+// 		this.name = name;
+// 		this.salary = salary;
+// 	}
+	
+// 	getSalary() {
+// 		return this._addSign(this.salary);
+// 	}
+	
+// 	_addSign(num) {
+// 		return num + '$';
+// 	}
+// }
+// let employee = new Employee('alex','19000');
+// console.log(employee.getSalary());
+
+
+// class Employee {
+// 	constructor(name, salary) {
+// 		this._name = name;
+// 		this._salary = salary;
+// 	}
+	
+// 	getName() {
+// 		return this._name;
+// 	}
+// 	getSalary() {
+// 		return this._salary;
+// 	}
+// }
+// let employee = new Employee('alex', '12004');
+// console.log(employee._name);
+// console.log(employee._salary);
+
+
+
+// class Employee {
+// 	constructor(name, salary) {
+// 		this.name = name;
+// 		this.salary = salary;
+// 	}
+	
+// 	getSalary() {
+// 		return this.#addSign(this.salary);
+// 	}
+	
+// 	#addSign(num) {
+// 		return num + '$';
+// 	}
+// }
+
+// let employee = new Employee('alex', '19000');
+// console.log(employee.getSalary());
+
+
+// class Employee {
+//     #name;
+//     #salary;
+//     #age;
+//     constructor(name, salary, age){
+//         this.#name = name;
+//         this.#salary = salary;
+//         this.#age = age;
+//     }
+//     info(){
+//         return this.#name + ' ' + this.#salary + ' ' + this.#age;
+//     }
+// }
+// let employee = new Employee('Alex', '14000', '19');
+// console.log(employee.info());
+
+
+
+
+
+
+// class Employee {
+//     constructor(name, salary){
+//         this.name = name;
+//         this.salary = salary;
+//     }
+//     getName(){
+//         return this.name;
+//     }
+//     getSalary(){
+//         return this.salary;
+//     }
+//     riseSalary(){
+//         return +this.salary *1.1;
+//     }
+// }
+// let employee = new Employee('alex','19000');
+// console.log(employee.getName());
+// console.log(employee.getSalary());
+// console.log(employee.riseSalary());
+
+
+
+
+// class User {
+//     constructor(name, surn){
+//         this.name = name;
+//         this.surn = surn;
+//     }
+//     show() {
+//         return this.name + ' ' + this.surn;
+//     }
+// }
+// let user = new User('join', 'smit');
+// console.log(user.show());
+
+
+
+// class Employee {
+//     constructor(name, salary){
+//         console.log(name + ' ' + salary);
+//     }
+// }
+// let employee = new Employee('alex', ' 12000');
+
+// class User {
+//     constructor(name, surn){
+//         console.log(name + ' ' + surn);
+//     }
+// }
+
+// let user = new User('john', 'smit');
+
+
+
+// class Employee {
+//     constructor(){
+//         console.log('---');
+//     }
+// }
+// let employee = new Employee;
+
+
+
+
+// class User {
+//     constructor() {
+//         console.log('+++');
+//     }
+// }
+
+// let user = new User;
+
+
+
+
+// class Student {
+//     name = 'Alex';
+//     surn = 'Ruz';
+
+// }
+
+
+
+
+// class Student {
+//     name;
+//     surn;
+//     firstUp(str){
+//         return str[0].toUpperCase();
+//     }
+//     initialsUp(){
+//         return this.firstUp(this.name) + ' ' + this.firstUp(this.surn);
+//     }
+// }
+
+// let student = new Student;
+// student.name = 'alex';
+// student.surn = 'ruz';
+// console.log(student.initialsUp());
+
+
+
+// class User {
+//     show() {
+//         return this.cape(this.name);
+//     }
+//     cape(str){
+//         return str[0].toUpperCase() + str.slice(1);
+//     }
+// }
+
+
+
+// class Employee {
+//     name;
+//     salary;
+//     nameInfo(){
+//         return this.name;
+//     }
+//     salaryInfo(){
+//         return this.salary;
+//     }
+// }
+// let employee = new Employee;
+// employee.name = 'Alex';
+// employee.salary = '17000';
+// console.log(employee.nameInfo());
+// console.log(employee.salaryInfo());
+
+
+
+// class Employee {
+//     info(name, salary){
+//         return name + ' ' + salary;
+//     }
+// }
+// let employee = new Employee;
+// console.log(employee.info('Alex',17000));
+
+
+
+// class User {
+//     show(name,surn){
+//         return name + ' ' + surn;
+//     }
+// }
+// let user = new User;
+// console.log(user.show('join', 'smit'));
+
+
+
+// class Employee {
+//     name;
+//     age;
+//     salary;
+//     char(){
+//         return 10;
+//     }
+// }
+// let employee = new Employee;
+// console.log(employee.char());
+
+
+
+
+
+// class User {
+//     show(){
+//         return '+++';
+//     }
+// }
+// let user = new User;
+// console.log(user.show());
+
+
+
+// class Employee {
+//     name;
+//     age;
+//     salary;
+// }
+
+// let employee1 = new Employee;
+// let employee2 = new Employee;
+// employee1.name = 'alex';
+// employee2.name = 'maks';
+// employee1.age = '23';
+// employee2.age = '19';
+// employee1.salary = '100000';
+// employee2.salary = '1000';
+// console.log(employee1);
+// console.log(employee2);
+// console.log(+employee1.salary + +employee2.salary);
+
+
+
+// class User {
+    
+// }
+// let user1 = new User;
+// let user2 = new User;
+// user1.name = 'john';
+// user2.name = 'eric';
+// console.log(user1.name);
+// console.log(user2.name);
+
+
+
+// class Employee {
+//     name;
+//     age;
+//     salary;
+// }
+
+// let employee = new Employee;
+// employee.name = 'Alex';
+// employee.age = '23';
+// employee.salary = '10000';
+// console.log(employee.name + ' ' + employee.age + ' ' + employee.salary);
+
+
+
+// class User {
+    
+// }
+
+// let user = new User;
+
+// user.name = 'join';
+// user.surn = 'smit';
+// console.log(user.name);
+// console.log(user.surn);
+
+
+
+// class Employee {
+
+// }
+
+// let employee = new Employee;
+// console.log(employee);
+
+
+
+
+
+// class User {
+
+// }
+
+// let user = new User;
+// console.log(user);
+
+
+
+
+
+
+
+
+    // class Car {
+    //     color;
+    //     fuel;
+
+    //     go(){
+
+    //     }
+
+    //     turn(){
+
+    //     }
+    //     stop(){
+
+    //     }
+    // }
+    // let myCar = new Car;
+    // myCar.color = 'red';
+    // myCar.fuel = 50;
+    // myCar.go();
+    // myCar.turn();
+    // myCar.stop();
+
+
+
+
+
+</script>
+</body>
+</html>
