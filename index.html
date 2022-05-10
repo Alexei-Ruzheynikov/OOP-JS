@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ООП на классах</title>
+    <title>Наследование</title>
 </head>
 
 <body>
+    
     <!-- <p>text</p> -->
 
 <!-- <div>text</div> -->
@@ -22,10 +23,36 @@
 
 <!-- <div>text</div>
 <div>text</div>
+<div>text</div>
+ -->
+
+
+
+<!-- 
+<div>
+	<p>text</p>
+	<p>text</p>
+	<p>text</p>
+</div> -->
+
+
+
+
+<!-- <p>text</p> -->
+
+
+
+
+
+<!-- <div>text</div> -->
+
+
+<!-- <input> -->
+
+<!-- 
+<div>text</div>
+<div>text</div>
 <div>text</div> -->
-
-
-
 
 
 <div>
@@ -34,9 +61,11 @@
 	<p>text</p>
 </div>
 
+
+
+
+
 <script>
-
-
 
 
 
@@ -45,6 +74,459 @@ let elem = document.querySelector('div');
 let elems = elem.children;
 
 console.dir(elems);
+
+
+
+
+// let elems = document.querySelectorAll('div');
+// console.dir(elems);
+
+
+
+
+// let elem = document.querySelector('input');
+// console.dir(elem);
+
+
+
+
+
+// let elem = document.querySelector('div');
+// console.dir(elem);
+
+
+
+
+
+
+// let elem = document.querySelector('p');
+
+// console.dir(elem);
+
+
+
+
+
+
+
+
+
+
+// class User {
+//     setName(name) {
+//         this._name = name;
+//     }
+//     getName() {
+//         return this._name;
+//     }
+// }
+
+// class Employee extends User {
+//     setSalary(salary){
+//         this._salary = salary;
+//     }
+//     getSalary(){
+//         return this._salary;
+//     }
+// }
+
+// class Programmer extends Employee {
+//     getProgram(program){
+//         this._program = program;
+//     }
+//     setProgram(program){
+//         return this._program;
+//     }
+// }
+
+// class Designer extends Programmer {
+//     getDesign(design){
+//         this._design = design;
+//     }
+//     setDesign(design){
+//         return this._design;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class User {
+// 	_name;
+	
+// 	setName(name) {
+// 		this._name = name;
+// 	}
+// 	getName() {
+// 		return this._name;
+// 	}
+// }
+
+// class Employee extends User {
+// 	setName(name) {
+// 		if (name.length > 0) {
+// 			this._name = name;
+// 		}
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class User {
+// 	setName(name) {
+// 		if (this.notEmpty(name)) {
+// 			this.name = name;
+// 		}
+// 	}
+// 	getName() {
+// 		return this.name;
+// 	}
+	
+// 	_notEmpty(str) {
+// 		return str.length > 0;
+// 	}
+// }
+// class Employee extends User {
+// 	setSurn(surn) {
+// 		if (this._notEmpty(surn)) {
+// 			this.surn = surn;
+// 		}
+// 	}
+// 	getSurn() {
+// 		return this.surn;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+// class User {
+// 	#name;
+	
+// 	setName(name) {
+// 		this.#name = name;
+// 	}
+// 	getName() {
+// 		return this.#name;
+// 	}
+// }
+
+// class Employee extends User {
+// 	setName(name) {
+// 		if (name.length > 0) {
+//             let name = this.getName();
+//             this.setName(name);
+// 		}
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+// class User {
+//     #age;
+//     setAge(age){
+//         this.#age = age;
+//     }
+//     getAge(){
+//         return this.#age;
+//     }
+// }
+
+// class Student extends User {
+//     incAge() {
+//         let age = this.getAge();
+//         age++;
+//         this.setAge(age);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class User {
+// 	#name;
+// 	#surn;
+	
+// 	setName(name) {
+// 		this.#name = name;
+// 	}
+// 	getName() {
+// 		return this.#name;
+// 	}
+	
+// 	setSurn(surn) {
+// 		this.#surn = surn;
+// 	}
+// 	getSurn() {
+// 		return this.#surn;
+// 	}
+    
+// }
+
+// class Employee extends User {
+//     getFull() {
+// 	    return this.#name + ' ' + this.#surn;
+// }
+// }
+
+// let employee = new Employee;
+// employee.setName('lesha');
+// console.log(employee.getName());
+// employee.setSurn('ruzh');
+// console.log(employee.getSurn());
+// console.log(employee.getFull());
+
+
+
+
+// class User {
+// 	constructor(name, surn) {
+// 		this.name = name;
+// 		this.surn = surn;
+// 	}
+	
+// 	getName() {
+// 		return this.name;
+// 	}
+// 	getSurn() {
+// 		return this.surn;
+// 	}
+// }
+
+// class Employee extends user {
+//     constructor(name, surn, age, salare){
+//         super(name,surn);
+//         this.age = age;
+//         this.salare = salare;
+//     }
+//     getAge(){
+//         return this.age;
+//     }
+//     getAge(){
+//         return this.salare;
+//     }
+// }
+
+
+
+
+
+
+
+
+// class User {
+// 	setAge(age) {
+// 		if (age >= 0) {
+// 			this.age = age;
+//             console.log(age);
+// 		} else {
+// 			throw new Error('need age more 0');
+// 		}
+// 	}
+// }
+// class Employee extends User {
+// 	setAge(age) {
+// 		if (age <= 120) {
+// 			if (age >= 0) {
+// 				super.setAge(age);
+// 			} else {
+// 				throw new Error('need age more 0');
+// 			}
+// 		} else {
+// 			throw new Error('need age less 120');
+// 		}
+// 	}
+// }
+
+// let employee = new Employee;
+// console.log(employee.setAge(25));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class User {
+//     setName(name){
+//         this.name = name;
+//     }
+//     getName(){
+//         return this.name;
+//     }
+//     setAge(age){
+//         this.age = age;
+//     }
+//     getAge(){
+//         return this.age;
+//     }
+// }
+
+// class Employee extends User {
+//     setSalare(salare){
+//         this.salare = salare;
+//     }
+//     getSalare(){
+//         return this.salare;
+//     }
+//     setAge(age){
+//         if(age >= 18 && age <= 65){
+//             this.age = age;
+//         } else {
+//             throw new Error('not is age');
+//         }
+        
+//     }
+//     getAge(){
+//         return this.age;
+//     }
+// }
+
+
+// let employee = new Employee;
+// employee.setAge(18);
+// console.log(employee.getAge());
+
+
+
+
+
+
+
+// class User {
+//     setName(name){
+//         this.name = name;
+//     }
+//     getName(){
+//         return this.name;
+//     }
+// }
+
+// class Employee extends User {
+//     setSalare(salare){
+//         this.salare = salare;
+//     }
+//     getSalare(){
+//         return this.salare;
+//     }
+// }
+
+
+// let employee = new Employee;
+// employee.setName('lesha');
+// employee.setSalare(144000);
+// let name = employee.getName();
+// let salary = employee.getSalare();
+// console.log(name + ' ' + salary);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let employee = new Employee;
+// employee.setName('lesha');
+// let name = employee.getName();
+// console.log(name);
+
+
+
+
+
+
+// class User {
+
+// }
+
+// class Student {
+
+// }
+
+// class Student extends User {
+
+// }
+
+
+
+
+
+
+
+
+
+// let elem = document.querySelector('div');
+// let elems = elem.children;
+
+// console.dir(elems);
 
 
 
