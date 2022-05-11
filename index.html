@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наследование</title>
+    <title>Продвинутое</title>
 </head>
 
 <body>
@@ -55,25 +55,239 @@
 <div>text</div> -->
 
 
-<div>
+<!-- <div>
 	<p>text</p>
 	<p>text</p>
 	<p>text</p>
-</div>
+</div> -->
 
 
 
 
 
 <script>
+'use strict';
 
 
 
 
-let elem = document.querySelector('div');
-let elems = elem.children;
 
-console.dir(elems);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Employee {
+//     #name;
+
+//     constructor(name){
+//         this.#name = name;
+//     }
+//     set name(name){
+//         if(name.length > 0){
+//             this.#name = name;
+//         } else {
+//             throw new Error ('name is incorrect');
+//         }
+//     }
+//     get name() {
+//         return this.#name;
+//     }
+// }
+
+// let employee = new Employee();
+// employee.name = 'eric';
+// let name = employee.name;
+// console.log(name);
+
+
+
+
+
+
+
+
+
+
+// class Employee {
+//     #name;
+
+//     constructor(name){
+//         this.#name = name;
+//     }
+//     get name() {
+//         return this.#name;
+//     }
+// }
+
+// let employee = new Employee('lesha');
+// let name = employee.name;
+// console.log(name);
+// // employee.name = 'eric';
+
+
+
+// class Employee {
+// 	get name() {
+// 		console.log('get');
+// 	}
+// 	set name(name) {
+// 		console.log('set');
+// 	}
+// }
+
+
+// let employee = new Employee;
+
+// let name = employee.name;
+// employee.name = 'john';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Employee {
+// 	constructor(salary) {
+// 		this.salary = salary;
+// 	}
+// 	getDollarsSalary() {
+// 		return this.salary + '$';
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+// class User {
+// 	#name;
+	
+// 	constructor(name) {
+// 		this.#name = name;
+// 	}
+// 	getName() {
+// 		return this.#name;
+// 	}
+// }
+
+// let user = new User('john');
+
+// let func = user.getName;
+
+// func = func.bind(user);
+// console.log(func());
+
+
+
+
+
+
+
+
+// class Employee {
+// 	constructor(name, salary, coeffs) {
+// 		this.name = name;
+// 		this.salary = salary;
+// 		this.coeffs = coeffs;
+// 	}
+	
+// 	getTotal() {
+// 		return this.coeffs.reduce(function(res, coeff) {
+// 			return res + this.salary * coeff;
+// 		}, 0);
+// 	}
+// }
+
+// let employee = new Employee('john', 1000, [1.1, 1.2, 1.3]);
+
+// console.log(employee.getTotal);
+
+
+
+
+
+
+
+// class Employee {
+// 	constructor(name, salary, coeffs) {
+// 		this.name = name;
+// 		this.salary = salary;
+// 		this.coeffs = coeffs;
+// 	}
+	
+// 	getTotal() {
+// 		return this.coeffs.reduce(function(res, coeff) {
+// 			return res + this.salary * coeff;
+// 		}, 0);
+// 	}
+// }
+
+// let employee = new Employee('john', 1000, [1.1, 1.2, 1.3]);
+// let total = employee.getTotal();
+// console.log(total);
+
+
+
+
+
+// class Employee {
+// 	constructor(name, salary, coeffs) {
+// 		this.name = name;
+// 		this.salary = salary;
+// 		this.coeffs = coeffs;
+// 	}
+	
+// 	getTotal() {
+// 		return this.coeffs.reduce((res, coeff) => {
+// 			return res + this.salary * coeff;
+// 		}, 0);
+// 	}
+// }
+
+// let employee = new Employee('john', 1000, [1.1, 1.2, 1.3]);
+// let total = employee.getTotal();
+// console.log(total);
+
+
+
+
+
+
+
+
+
+
+// let elem = document.querySelector('div');
+// let elems = elem.children;
+
+// console.dir(elems);
 
 
 
@@ -1587,5 +1801,7 @@ console.dir(elems);
 
 
 </script>
+
+<!-- <script type="module" src="./index.js"></script> -->
 </body>
 </html>
