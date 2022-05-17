@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Продвинутое</title>
+    <title>Практикум</title>
 </head>
 
 <body>
@@ -72,6 +72,417 @@
 
 
 
+
+
+
+
+
+class Store {
+
+}
+
+let store = new Store;
+store.set('key', {a: 1, b: 2, c: 3});
+let res = store.get('key');
+console.log(res);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Month {
+//     #month;
+//     #arr;
+//     #date;
+//     constructor(month, arr){
+//         this.#month = month;
+//         this.#arr = arr;
+//     }
+//     getMonthNumber(){
+//         return this.#month;
+//     }
+//     getNameMonth(){
+//         for(let i = 0; i < this.#arr.length; i++){
+//             if(i == this.#month){
+//                 return this.#arr[i];
+//             }
+//         }
+//     }
+//     getNextNumberDate(){
+//         this.#date = new Date(2022, this.#month + 1,0);
+//         return this.#date.getDate();
+//     }
+//     getLastNumberDay(){
+//         this.#date = new Date(2022, this.#month,1);
+//         return this.#date.getDay();
+//     }
+//     getNextNumberDay(){
+//         this.#date = new Date(2022, this.#month + 1, 0);
+//         return this.#date.getDay();
+//     }
+// }
+// let month = new Month(4, ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"]);
+// console.log('Возвращает номер месяца: ' + month.getMonthNumber());
+// console.log('Возвращает название месяца: ' + month.getNameMonth());
+// console.log('Возвращает последний день месяца: ' + month.getNextNumberDate());
+// console.log('Возвращает номер дня недели первого дня месяца: ' + month.getLastNumberDay());
+// console.log('Возвращает номер дня недели последнего дня месяца: ' + month.getNextNumberDay());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Zate {
+//     #year;
+//     #month;
+//     #day;
+//     #date;
+//     #arr;
+//     #arrMonth;
+
+//     constructor(year, month, day, arr, arrMonth){
+//         this.#year = year;
+//         this.#month = month;
+//         this.#day = day;
+//         this.#date = new Date(this.#year, this.#month, this.#day);
+//         this.#arr = arr;
+//         this.#arrMonth = arrMonth;
+//     }
+//     getYear(){
+//         return this.#date.getFullYear();
+//     }
+//     getMonth(){
+//         return this.#date.getMonth();
+//     }
+//     getDate(){
+//         return this.#date.getDate();
+//     }
+//     getDay(){
+//         return this.#date.getDay();
+//     }
+//     getDayName() {
+//         for(let i = 0; i < this.#arr.length; i++){
+//             if(i == this.getDay()){
+//                 return this.#arr[i];
+//             }
+//         }
+//     }
+//     getMonthName() {
+//         for(let i = 0; i < this.#arrMonth.length; i++){
+//             if(i == this.getMonth()){
+//                 return this.#arrMonth[i];
+//             }
+//         }
+//     }
+// }
+
+// let zate = new Zate(2015, 4, 15, ["вс","пн","вт","ср","чт","пт","сб"], 
+// ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"]);
+// console.log('Возвращает год ' + zate.getYear());
+// console.log('Возвращает месяц ' + zate.getMonth());
+// console.log('Возвращает день месяца ' + zate.getDate());
+// console.log('Возвращает день недели ' + zate.getDay());
+// console.log('Возвращает название дня недели ' + zate.getDayName());
+// console.log('Возвращает название месяца ' + zate.getMonthName());
+
+
+
+// class ZateExt extends Zate{
+//     #age;
+//     #month;
+//     #Date;
+//     getAgePlus(age){
+//         this.#age = age;
+//         return this.getYear() + this.#age; 
+//     }
+//     getAgeMinus(age){
+//         this.#age = age;
+//         return this.getYear() - this.#age; 
+//     }
+//     getMonthPlus(month){
+//         this.#month = month;
+//         return this.getMonth() + this.#month; 
+//     }
+//     getMonthMinus(month){
+//         this.#month = month;
+//         return this.getMonth() - this.#month; 
+//     }
+//     getDatePlus(Date){
+//         this.#Date = Date;
+//         return this.getDate() + this.#Date; 
+//     }
+//     getDateMinus(Date){
+//         this.#Date = Date;
+//         return this.getDate() - this.#Date; 
+//     }
+// }
+// let zateExt = new ZateExt(2015, 4, 15, ["вс","пн","вт","ср","чт","пт","сб"], 
+// ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"]);
+// console.log('Прибавляет года ' + zateExt.getAgePlus(5));
+// console.log('Отнимает года ' + zateExt.getAgeMinus(5));
+// console.log('Прибавляет месяцы ' + zateExt.getMonthPlus(2));
+// console.log('Отнимает месяцы ' + zateExt.getMonthMinus(2));
+// console.log('Прибавляет дни ' + zateExt.getDatePlus(12));
+// console.log('Отнимает дни ' + zateExt.getDateMinus(5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Zate {
+//     #year;
+//     #month;
+//     #day;
+//     #date;
+//     #arr;
+//     #arrMonth;
+
+//     constructor(year, month, day, arr, arrMonth){
+//         this.#year = year;
+//         this.#month = month;
+//         this.#day = day;
+//         this.#date = new Date(this.#year, this.#month, this.#day);
+//         this.#arr = arr;
+//         this.#arrMonth = arrMonth;
+//     }
+//     getYear(){
+//         return this.#date.getFullYear();
+//     }
+//     getMonth(){
+//         return this.#date.getMonth();
+//     }
+//     getDate(){
+//         return this.#date.getDate();
+//     }
+//     getDay(){
+//         return this.#date.getDay();
+//     }
+//     getDayName() {
+//         for(let i = 0; i < this.#arr.length; i++){
+//             if(i == this.getDay()){
+//                 return this.#arr[i];
+//             }
+//         }
+//     }
+//     getMonthName() {
+//         for(let i = 0; i < this.#arrMonth.length; i++){
+//             if(i == this.getMonth()){
+//                 return this.#arrMonth[i];
+//             }
+//         }
+//     }
+// }
+
+// let zate = new Zate(2015, 4, 15, ["вс","пн","вт","ср","чт","пт","сб"], 
+// ["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек"]);
+// console.log('Возвращает год ' + zate.getYear());
+// console.log('Возвращает месяц ' + zate.getMonth());
+// console.log('Возвращает день месяца ' + zate.getDate());
+// console.log('Возвращает день недели ' + zate.getDay());
+// console.log('Возвращает название дня недели ' + zate.getDayName());
+// console.log('Возвращает название месяца ' + zate.getMonthName());
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Period {
+//     #date1;
+//     #date2;
+//     constructor(date1, date2){
+//         this.#date1 = date1;
+//         this.#date2 = date2;
+//     }
+//     getTimeDiffMiliseconds(){
+//         return this.#date1 - this.#date2;
+//     }
+//     getTimeDiffSeconds(){
+//         return Math.floor((this.#date1 - this.#date2) / 1000);
+//     }
+//     getTimeDiffMinutes(){
+//         return Math.floor((this.#date1 - this.#date2) / (1000 * 60 ));
+//     }
+//     getTimeDiffHours(){
+//         return Math.floor((this.#date1 - this.#date2) / (1000 * 60 * 60));
+//     }
+//     getTimeDiffDays(){
+//         return Math.floor((this.#date1 - this.#date2) / (1000 * 60 * 60 * 24));
+//     }
+// }
+
+// let period = new Period(new Date(), new Date(2021,4,15));
+// console.log('Разница в милисекундах ' +  period.getTimeDiffMiliseconds());
+// console.log('Разница в секундах ' +  period.getTimeDiffSeconds());
+// console.log('Разница в минутах ' +  period.getTimeDiffMinutes());
+// console.log('Разница в часах ' +  period.getTimeDiffHours());
+// console.log('Разница в днях ' +  period.getTimeDiffDays());
+
+
+
+
+
+
+
+
+// class Text {
+//     #text;
+//     constructor(text){
+//         this.#text = text;
+//     }
+
+//     getCountSymbols(){
+//         return this.#text.length;
+//     }
+
+//     getCountLetters(){
+//         let arr = this.#text.split('');
+//         let res = [];
+//         for (let i = 0; i < arr.length; i++){
+//             if(/[a-zA-Z]{1}/g.test(arr[i])){
+//                 res.push(arr[i]);
+//             }
+//         }
+//         return res;
+//     }
+
+//     getCountSpaces(){
+//         let arr = this.#text.split('');
+//         let res = [];
+//         for (let i = 0; i < arr.length; i++){
+//             if(/ {1}/g.test(arr[i])){
+//                 res.push(arr[i]);
+//             }
+//         }
+//         return res.length;
+
+//     }
+
+//     getCountSymbolsMinusSpaces(){
+//         return this.getCountSymbols() - this.getCountSpaces();
+//     }
+//     getArrWords(){
+//         let res = this.#text.match(/[^ ]+/g);
+//         return res;
+//     }
+//     getArrSentences(){
+//         let res = this.#text.match(/[^.]+/g);
+//         return res;
+//     }
+// }
+// let text = new Text('fd F  s4 3f 346662. sdag asdg ads. FAWF F SDf sd.');
+// // console.log(text.getCountSymbols());
+// // console.log(text.getCountLetters());
+// // console.log(text.getCountSpaces());
+// // console.log(text.getCountSymbolsMinusSpaces());
+// // console.log(text.getArrWords());
+// // console.log(text.getArrSentences());
+
+
+
+
+
+
+
+// class Rectangle {
+//     #width;
+//     #height;
+//     constructor(width, height){
+//         this.#width = width;
+//         this.#height = height;
+//     }
+//     getSquare(){
+//         return this.#width * this.#height;
+//     }
+//     getPerimeter(){
+//         return this.#width*2 + this.#height*2;
+//     }
+//     getRatio(){
+//         let square = this.getSquare();
+//         let perimeter = this.getPerimeter();
+//         return square / perimeter;
+//     }
+// }
+
+// let rectangle = new Rectangle(5,10);
+// console.log(rectangle.getSquare());
+// console.log(rectangle.getPerimeter());
+// console.log(rectangle.getRatio());
+
+
+
+
+
+// class Circle {
+//     #radiusCircle;
+//     constructor(radius){
+//         this.#radiusCircle = radius;
+//     }
+//     get squareCircle() {
+//         return this.#radiusCircle **2 * 3.14;
+//     }
+//     get lengthCircle() {
+//         return this.#radiusCircle * 2 * 3.14;
+//     }
+// }
+
+// let circle = new Circle(4);
+// console.log(circle.squareCircle);
+// console.log(circle.lengthCircle);
 
 
 
